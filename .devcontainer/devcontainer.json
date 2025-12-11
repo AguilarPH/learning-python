@@ -48,5 +48,11 @@
 	"onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc",
 	// Pull all branches
 	"postAttachCommand": "git pull --all",
-	"postCreateCommand": "sh .devcontainer/startup.sh"
+	"postCreateCommand": "sh .devcontainer/startup.sh",
+	"features": {
+		"ghcr.io/devcontainers/features/python:1": {
+			"installTools": true,
+			"version": "3.11"
+		}
+	}
 }
